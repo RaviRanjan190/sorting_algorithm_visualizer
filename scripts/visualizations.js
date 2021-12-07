@@ -38,7 +38,7 @@ function div_update(cont,height,color)
 {
     window.setTimeout(function(){
         var width=(100/array_size-(2*margin_size));
-        cont.style=" margin:0% " + margin_size + "%; width:" + width + "%; height:" + height + "%; background-color:" + color + "; font-size:" +width/1.8+"vw; writing-mode: vertical-rl; text-orientation: upright; text-align: center; color: #e6cbad; border-radius:0 0 "+width*3+"px "+width*3+"px; ";
+        cont.style=" margin:0% " + margin_size + "%; width:" + width + "%; height:" + height + "%; background-color:" + color + "; font-size:" +width/2.8+"vw; writing-mode: vertical-rl; text-orientation: upright; text-align: center; color: #e6cbad; border-radius:0 0 "+width*3+"px "+width*3+"px; ";
         cont.innerHTML= height.toString();
     },c_delay+=delay_time);
 }
