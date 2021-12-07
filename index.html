@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+
+            <div class="array-inputs">
+                <p>Array Size:</p>
+                <input id="a_size" type="range" min=20 max=100 step=5 value=50>
+                <p>Algorithm Speed:</p>
+                <input id="a_speed" type="range" min=1 max=8 step=1 value=5>
+                <button id="a_generate" >Try New Array❕</button>
+                <button id="rev" >Reverse Array</button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting💥Visualizer</p>
+
+                <div class="algos">
+                    <button class="btn" >Bubble</button>
+                    <button class="btn">Selection</button>
+                    <button class="btn">Insertion</button>
+                    <button class="btn">Merge</button>
+                    <button class="btn">Quick</button>
+                    <button class="btn" style="margin-right: 0px;">Heap</button>
+                    
+                </div>
+                
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="contain">
+
+        <div id="Info_Cont1">
+            <p>Click on any sorting algorithm name to see the their functionality visualization  </p>
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+            <p>When algorithm is running all buttons are disabled</p>
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+    <script src="./scripts/reverse.js"></script>
+
+</body>
+
+</html>
